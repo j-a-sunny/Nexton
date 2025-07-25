@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router'
 
 const Cart = () => {
   return (
@@ -128,6 +129,12 @@ const Cart = () => {
           </div>
 {/* product end */}
         </div>
+        <div className="flex items-center justify-between">
+          <p className='text-lg font-medium font-poppins text-primary'>Total</p>
+          <p className='text-lg font-semibold font-poppins text-primary'>$999.99</p>
+        </div>
+<Link to={'/'} className='w-full inline-block my-3 py-3 px-5 bg-second text-white text-center 
+ text-lg rounded-4xl' >Check out</Link>
       </div>
     </div>
   )
