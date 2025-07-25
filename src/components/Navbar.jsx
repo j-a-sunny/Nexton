@@ -4,6 +4,7 @@ import { CiSearch } from "react-icons/ci";
 import { FaRegUser } from "react-icons/fa6";
 import { BsCart3 } from "react-icons/bs";
 import { Link } from 'react-router';
+import Cart from './Cart';
 
 
 
@@ -29,6 +30,7 @@ export const Navbar = () => {
             </div>
         </div>
     </div>
+    <Cart/>
    </nav>
    </>
   )
