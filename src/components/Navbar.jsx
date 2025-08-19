@@ -49,14 +49,14 @@ export const Navbar = () => {
 
                     {/* Hamburger menu */}
                     <button onClick={() => setShowNav(!showNav)} className='relative  md:hidden'>
-                        <div className='block relative w-6 h-9 scale-70 flex flex-col justify-center items-center transition-all duration-300 ease-in-out'>
-                            <span className='w-full h-1 bg-primary absolute rounded-full top-2'></span>
-                            <span className='w-full h-1 bg-primary absolute rounded-full '></span>
-                            <span className='w-full h-1 bg-primary absolute rounded-full bottom-2'></span>
+                        <div className='relative w-6 h-9 scale-70 flex flex-col justify-center items-center'>
+                            <span className={`h-1 bg-primary absolute rounded-full  duration-400 ease-in-out ${showNav ? 'rotate-45 w-5/4 top-4' : 'w-full top-2'}`}></span>
+                            <span className={` h-1 bg-primary absolute rounded-full  duration-400 ease-in-out ${showNav?'w-0':'w-full'}`}></span>
+                            <span className={`h-1 bg-primary absolute rounded-full  duration-400 ease-in-out ${showNav ? '-rotate-45 w-5/4 bottom-4' : 'w-full bottom-2'}`}></span>
                         </div>
 
 
-                        <span className='w-[15px] h-[15px] bg-[#0EA5E9] rounded-full flex justify-center items-center text-[12px] text-[#fff] font-poppins font-medium absolute top-1 left-[12px]'>3</span>
+                        <span className={`w-[15px] h-[15px] bg-[#0EA5E9] rounded-full flex justify-center items-center text-[12px] text-[#fff] font-poppins font-medium absolute top-1 left-[12px] ${!showNav || 'hidden'}`}>3</span>
                     </button>
 
 
