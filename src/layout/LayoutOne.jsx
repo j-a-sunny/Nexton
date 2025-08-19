@@ -7,7 +7,7 @@ const LayoutOne = () => {
   return (
     <>
     <Navbar/>
-    <ResNavbar/>
+    {/* <ResNavbar/> */}
     <Outlet/>
     </>
   )
