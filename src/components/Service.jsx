@@ -1,8 +1,7 @@
+import { TbTruckReturn } from "react-icons/tb"; 
 import { TbTruckDelivery } from "react-icons/tb"; 
 import React from 'react'
 import { ServiceSingleitem } from './common/ServiceSingleitem'
-import { CiDeliveryTruck } from "react-icons/ci";
-import { TbExchange } from "react-icons/tb";
 import { TbWorld } from "react-icons/tb";
 import { RiRefund2Fill } from "react-icons/ri";
 
@@ -28,7 +27,7 @@ const Service = () => {
         <ServiceSingleitem
           serviceT="Very easy to return"
           serviceP="Just phone number"
-          serviceI={<TbExchange className="text-[24px] text-second" />}
+          serviceI={<TbTruckReturn className="text-[24px] text-second" />}
         />
       </div>
 
@@ -36,7 +35,7 @@ const Service = () => {
         <ServiceSingleitem
           serviceT="Worldwide delivery"
           serviceP="Fast delivery worldwide"
-          serviceI={<TbWorld className="text-[24px] font-thin text-second" />}
+          serviceI={<TbWorld className="text-[24px] text-second" />}
         />
       </div>
 
