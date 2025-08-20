@@ -20,6 +20,7 @@ function App() {
   ))
   return (
     <>
+      <Analytics />
       <SpeedInsights />
       <RouterProvider router={myRoute} />
     </>
