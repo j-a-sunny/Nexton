@@ -19,7 +19,7 @@ const Service = () => {
         <ServiceSingleitem
           serviceT="Free shipping"
           serviceP="On orders over $50.00"
-          serviceI={<TbTruckDelivery className="text-[24px] text-second" />}
+          serviceI={<TbTruckDelivery/>}
         />
       </div>
 
@@ -27,7 +27,7 @@ const Service = () => {
         <ServiceSingleitem
           serviceT="Very easy to return"
           serviceP="Just phone number"
-          serviceI={<TbTruckReturn className="text-[24px] text-second" />}
+          serviceI={<TbTruckReturn/>}
         />
       </div>
 
@@ -35,7 +35,7 @@ const Service = () => {
         <ServiceSingleitem
           serviceT="Worldwide delivery"
           serviceP="Fast delivery worldwide"
-          serviceI={<TbWorld className="text-[24px] text-second" />}
+          serviceI={<TbWorld/>}
         />
       </div>
 
@@ -43,7 +43,7 @@ const Service = () => {
         <ServiceSingleitem
           serviceT="Refunds policy"
           serviceP="60 days return for any reason"
-          serviceI={<RiRefund2Fill className="text-[24px] text-second" />}
+          serviceI={<RiRefund2Fill/>}
         />
       </div>
     </div>
