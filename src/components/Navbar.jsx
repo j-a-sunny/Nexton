@@ -59,7 +59,7 @@ export const Navbar = () => {
                             <span className={`w-[15px] h-[15px] bg-[#0EA5E9] rounded-full flex justify-center items-center text-[12px] text-[#fff] font-poppins font-medium absolute top-1 left-[12px] ${!showNav || 'hidden'}`}>3</span>
                         </button>
                         {/* <Cart /> */}
-                        <div className={`container duration-400 ease-in-out p-3 bg-second text-white rounded-2xl absolute  right-1 left-1 flex ${showNav ? 'top-16 md:-top-full' : '-top-full'} flex-col gap-y-30 md:w-[300px] w-full`}>
+                        <div className={`container duration-400 ease-in-out p-3 bg-second text-white rounded-2xl absolute z-99 left-1/2 -translate-x-1/2 flex ${showNav ? 'top-16 md:-top-full' : '-top-full'}`}>
                             <ul>
                                 <li><Link to={'/'}>Home</Link></li>
                                 <li><Link to={'/'}>Shopping</Link></li>

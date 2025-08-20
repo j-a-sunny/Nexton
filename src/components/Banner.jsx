@@ -21,7 +21,7 @@ export const Banner = () => {
 
 
     <section id='banner' style={{ background: `url(${banner})`, backgroundRepeat: 'no-repeat', backgroundSize: 'cover', backgroundPosition: 'center' }} className='
-    px-6 py-40 md:py-40 md:pl-30'>
+    px-6 py-40 md:py-40'>
       <Slider {...settings}>
         <div>
           <div className='container'>

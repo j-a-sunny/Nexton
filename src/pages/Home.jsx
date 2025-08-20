@@ -1,6 +1,6 @@
 import React from 'react'
 import { Banner } from '../components/Banner'
-import Delivery from '../components/Delivery'
+import Service from '../components/Service'
 import Reco from '../components/Reco'
 import { Collection } from '../components/Collection'
 import { FooterNav } from '../components/FooterNav'
@@ -10,7 +10,7 @@ export const Home = () => {
   return (
     <>
     <Banner/>
-    <Delivery/>
+    <Service/>
     <Reco/>
     <Collection/>
     <FooterNav/>
