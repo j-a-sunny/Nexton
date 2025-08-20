@@ -15,7 +15,7 @@ import Cart from './Cart';
 export const Navbar = () => {
     const [showNav, setShowNav] = useState(false);
 
-    const [cart, setCart] = useState(true);
+    // const [cart, setCart] = useState(true);
     console.log(showNav);
     return (
         <>
