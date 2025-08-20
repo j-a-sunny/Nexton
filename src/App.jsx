@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/react';
 import { useState } from 'react'
 
 import './App.css'
@@ -8,18 +9,19 @@ import { Shop } from './pages/Shop'
 import { ProductPage } from './pages/ProductPage'
 
 function App() {
-const myRoute = createBrowserRouter(createRoutesFromElements(
-  <Route>
-    <Route path='/' element={<LayoutOne/>}>
-    <Route index element={<Home/>}/>
-    <Route path='/shop' element={<Shop/>}/>
-    <Route path='/products' element ={<ProductPage/>}/>
+  const myRoute = createBrowserRouter(createRoutesFromElements(
+    <Route>
+      <Route path='/' element={<LayoutOne />}>
+        <Route index element={<Home />} />
+        <Route path='/shop' element={<Shop />} />
+        <Route path='/products' element={<ProductPage />} />
+      </Route>
     </Route>
-  </Route>
-))
+  ))
   return (
     <>
-   <RouterProvider router={myRoute}/>
+      <SpeedInsights />
+      <RouterProvider router={myRoute} />
     </>
   )
 }
